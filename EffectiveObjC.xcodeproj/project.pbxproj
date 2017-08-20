@@ -16,6 +16,10 @@
 		97AFB5121F46D64400865126 /* JJHDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFB5101F46D64400865126 /* JJHDataViewController.m */; };
 		97AFB5131F46D64400865126 /* JJHDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AFB5111F46D64400865126 /* JJHDataViewController.xib */; };
 		97AFB5161F46D67B00865126 /* JJHDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFB5151F46D67B00865126 /* JJHDataFetcher.m */; };
+		97CF83DA1F4929D300F1B794 /* JJHCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF83D81F4929D300F1B794 /* JJHCategoryViewController.m */; };
+		97CF83DB1F4929D300F1B794 /* JJHCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CF83D91F4929D300F1B794 /* JJHCategoryViewController.xib */; };
+		97CF83DE1F492B0C00F1B794 /* JJHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF83DD1F492B0C00F1B794 /* JJHPerson.m */; };
+		97CF83E11F492D3100F1B794 /* JJHPerson+Friendship.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF83E01F492D3100F1B794 /* JJHPerson+Friendship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,13 @@
 		97AFB5111F46D64400865126 /* JJHDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJHDataViewController.xib; sourceTree = "<group>"; };
 		97AFB5141F46D67B00865126 /* JJHDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHDataFetcher.h; sourceTree = "<group>"; };
 		97AFB5151F46D67B00865126 /* JJHDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHDataFetcher.m; sourceTree = "<group>"; };
+		97CF83D71F4929D300F1B794 /* JJHCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHCategoryViewController.h; sourceTree = "<group>"; };
+		97CF83D81F4929D300F1B794 /* JJHCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHCategoryViewController.m; sourceTree = "<group>"; };
+		97CF83D91F4929D300F1B794 /* JJHCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJHCategoryViewController.xib; sourceTree = "<group>"; };
+		97CF83DC1F492B0C00F1B794 /* JJHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHPerson.h; sourceTree = "<group>"; };
+		97CF83DD1F492B0C00F1B794 /* JJHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHPerson.m; sourceTree = "<group>"; };
+		97CF83DF1F492D3100F1B794 /* JJHPerson+Friendship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JJHPerson+Friendship.h"; sourceTree = "<group>"; };
+		97CF83E01F492D3100F1B794 /* JJHPerson+Friendship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JJHPerson+Friendship.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +102,7 @@
 		97AFB50D1F46D5B200865126 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				97CF83D61F49293B00F1B794 /* category */,
 				97AFB50E1F46D5B200865126 /* protocol */,
 			);
 			path = src;
@@ -106,6 +118,20 @@
 				97AFB5151F46D67B00865126 /* JJHDataFetcher.m */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		97CF83D61F49293B00F1B794 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				97CF83D71F4929D300F1B794 /* JJHCategoryViewController.h */,
+				97CF83D81F4929D300F1B794 /* JJHCategoryViewController.m */,
+				97CF83D91F4929D300F1B794 /* JJHCategoryViewController.xib */,
+				97CF83DC1F492B0C00F1B794 /* JJHPerson.h */,
+				97CF83DD1F492B0C00F1B794 /* JJHPerson.m */,
+				97CF83DF1F492D3100F1B794 /* JJHPerson+Friendship.h */,
+				97CF83E01F492D3100F1B794 /* JJHPerson+Friendship.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97AFB5061F46D52C00865126 /* LaunchScreen.storyboard in Resources */,
+				97CF83DB1F4929D300F1B794 /* JJHCategoryViewController.xib in Resources */,
 				97AFB5031F46D52C00865126 /* Assets.xcassets in Resources */,
 				97AFB5011F46D52C00865126 /* Main.storyboard in Resources */,
 				97AFB5131F46D64400865126 /* JJHDataViewController.xib in Resources */,
@@ -182,9 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97AFB4FE1F46D52C00865126 /* ViewController.m in Sources */,
+				97CF83DA1F4929D300F1B794 /* JJHCategoryViewController.m in Sources */,
 				97AFB5161F46D67B00865126 /* JJHDataFetcher.m in Sources */,
+				97CF83E11F492D3100F1B794 /* JJHPerson+Friendship.m in Sources */,
 				97AFB4FB1F46D52C00865126 /* AppDelegate.m in Sources */,
 				97AFB4F81F46D52C00865126 /* main.m in Sources */,
+				97CF83DE1F492B0C00F1B794 /* JJHPerson.m in Sources */,
 				97AFB5121F46D64400865126 /* JJHDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +372,7 @@
 				97AFB50C1F46D52C00865126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

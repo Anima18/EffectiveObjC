@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JJHDataViewController.h"
+#import "JJHCategoryViewController.h"
 
 @interface ViewController ()
 
@@ -28,6 +29,11 @@
 
 - (IBAction)didProtocol:(id)sender {
     UIViewController *vc = [JJHDataViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)didCategory:(id)sender {
+    UIViewController *vc = [JJHCategoryViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

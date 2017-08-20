@@ -44,11 +44,20 @@
                                     <action selector="didProtocol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvI-9M-NpE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-0r-M93">
+                                <rect key="frame" x="172" y="140" width="31" height="30"/>
+                                <state key="normal" title="分类"/>
+                                <connections>
+                                    <action selector="didCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xw2-h6-28P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2cG-no-Ybd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Tx-SL-5zZ"/>
+                            <constraint firstItem="f1T-0r-M93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2zg-jn-CC9"/>
                             <constraint firstItem="2cG-no-Ybd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Lhw-oS-kWT"/>
+                            <constraint firstItem="f1T-0r-M93" firstAttribute="top" secondItem="2cG-no-Ybd" secondAttribute="bottom" constant="30" id="nTf-OM-0TM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQv-9u-4bK"/>
